@@ -1,18 +1,18 @@
-const add = function(val_one, val_two) {
-  return val_one + val_two
+const add = function(a, b) {
+  return a + b
 };
 
-const subtract = function(val_one, val_two) {
-	return val_one - val_two
+const subtract = function(a, b) {
+	return a - b
 };
 
 const sum = function(arr) {
-  return arr.reduce( (x1, x2) => x1 + x2, 0)
+  return arr.reduce( (a, b) => a + b, 0)
 };
 
 const multiply = function(arr) {
   if(arr.length){
-    return arr.reduce( (x1, x2) => x1 * x2 )
+    return arr.reduce( (a, b) => a * b )
     
   }else{
     return 0
