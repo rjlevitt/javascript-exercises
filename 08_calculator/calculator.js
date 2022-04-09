@@ -20,15 +20,14 @@ const multiply = function(arr) {
 
 };
 
-const power = function(num, power) {
-  powerArray = Array(power).fill(num)
-  return powerArray.reduce( (x1, x2) => x1 * x2 )
+const power = function(a, b) {
+  return Math.pow(a,b)
 };
 
-const factorial = function(num) {
-  if (num === 0) return 1;
+const factorial = function(n) {
+  if (n === 0) return 1;
   let product = 1;
-  for (let i = num; i > 0; i--) {
+  for (let i = n; i > 0; i--) {
     product *= i;
   }
   return product;
